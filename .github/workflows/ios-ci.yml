@@ -54,8 +54,8 @@ jobs:
     - name: Run tests
     run: >-
     xcodebuild test
-    -project MDI1-117-Ch-9-LoginKit/MDI1-117-Ch-9-LoginKit.xcodeproj
-    -scheme "MDI1-117-Ch-9-LoginKit"
+    -project LoginKit/LoginKit.xcodeproj
+    -scheme "LoginKit"
     -destination "$DESTINATION"
     -parallel-testing-enabled NO
     -resultBundlePath TestResults.xcresult
@@ -70,4 +70,4 @@ jobs:
     with:
       name: TestResults
       path: TestResults.xcresult
-      if-no-files-found: ignore
+      if-no-files-found: ignore-
