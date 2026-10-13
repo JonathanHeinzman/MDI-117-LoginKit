@@ -46,7 +46,7 @@ jobs:
       - name: Run tests
         run: >-
           xcodebuild test
-          -project LoginKit/LoginKit.xcodeproj
+          -project LoginKit.xcodeproj
           -scheme "LoginKit"
           -destination "$DESTINATION"
           -parallel-testing-enabled NO
